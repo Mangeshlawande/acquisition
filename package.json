@@ -1,0 +1,25 @@
+{
+  "name": "acquisitions",
+  "version": "1.0.0",
+  "description": "deployment project",
+  "keywords": [
+    "k8s",
+    "docker",
+    "node"
+  ],
+  "homepage": "https://github.com/Mangeshlawande/acquisition#readme",
+  "bugs": {
+    "url": "https://github.com/Mangeshlawande/acquisition/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mangeshlawande/acquisition.git"
+  },
+  "license": "ISC",
+  "author": "mangesh",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
