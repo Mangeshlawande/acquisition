@@ -12,3 +12,12 @@ npm run lint:fix
 npm run format
 npm run format:check
 
+
+## SETTING up Database
+
+npm install @neondatabase/serverless drizzle-orm 
+
+npm i -D drizzle-kit
+
+npm run db:generate
+npm run db:migrate
