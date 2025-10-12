@@ -15,7 +15,7 @@ export const hashPassword = async password => {
 
 export const createUser = async ({ name, email, password, role = 'user' }) => {
   try {
-    const existUser = db
+    const existUser = await db
       .select()
       .from(users)
       .where(eq(users.email, email))
