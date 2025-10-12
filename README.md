@@ -43,3 +43,20 @@ it will read cookie from incoming request
 and make them available in req.cookies 
 useful for handling session authentication & storing small bits of data
 express.json() : parses json data in request body , u can access it direct in body . Its essential for api since most client since both client send data in json format  
+
+## implementing Authentication 
+ **Creating routes**:
+ 
+google  httpie
+
+npm i jwt
+
+http client 
+
+npm i zod 
+A backend package for schema validation and type inference in TypeScript. It allows you to define data schemas and validate data against those schemas, ensuring that the data conforms to the expected structure and types.
+
+a valdation library, define schema and parse some data with it , 
+will  get back a strongly typed , validated result .
+
+bcrypt ::: --> 

@@ -1,12 +1,12 @@
 
-import { pgTable, unique, serial, timestamp, varchar } from "drizzle-orm/pg-core";
+import { pgTable, serial, timestamp, varchar } from 'drizzle-orm/pg-core';
 
 export default users = pgTable('users', {
-    id: serial('id').primaryKey(),
-    name: varchar('name', { length: 255 }).notNull().unique(),
-    email: varchar('email', { length: 255 }).notNull().unique(),
-    password: varchar('password', { length: 255 }).notNull().unique(),
-    role: varchar('role', { length: 50 }).notNull().default('user'),
-    created_at: timestamp().defaultNow().notNull(),
-    updated_at: timestamp().defaultNow().notNull(),
+  id: serial('id').primaryKey(),
+  name: varchar('name', { length: 255 }).notNull().unique(),
+  email: varchar('email', { length: 255 }).notNull().unique(),
+  password: varchar('password', { length: 255 }).notNull().unique(),
+  role: varchar('role', { length: 50 }).notNull().default('user'),
+  created_at: timestamp().defaultNow().notNull(),
+  updated_at: timestamp().defaultNow().notNull(),
 });
