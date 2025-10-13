@@ -1,3 +1,18 @@
 {"level":"info","message":"Hello from Acquisitions ! ","service":"acquisitions-api"}
 {"level":"info","message":"::1 - - [13/Oct/2025:15:43:18 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
 {"level":"info","message":"::1 - - [13/Oct/2025:15:43:18 +0000] \"GET /favicon.ico HTTP/1.1\" 404 150 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"User admin@gm.com created successfully","service":"acquisitions-api"}
+{"level":"info","message":"User registered successfully : ","service":"acquisitions-api"}
+{"level":"error","message":"Error comparing the password: Error: data and hash arguments required","service":"acquisitions-api"}
+{"level":"error","message":"Error authenticating user: Error: Error occurred while comparing password","service":"acquisitions-api"}
+{"level":"error","message":"signin error Error: Error occurred while comparing password","service":"acquisitions-api"}
+{"level":"error","message":"Error comparing the password: Error: data and hash arguments required","service":"acquisitions-api"}
+{"level":"error","message":"Error authenticating user: Error: Error occurred while comparing password","service":"acquisitions-api"}
+{"level":"error","message":"signin error Error: Error occurred while comparing password","service":"acquisitions-api"}
+{"level":"error","message":"Error comparing the password: Error: data and hash arguments required","service":"acquisitions-api"}
+{"level":"error","message":"Error authenticating user: Error: Error occurred while comparing password","service":"acquisitions-api"}
+{"level":"error","message":"signin error Error: Error occurred while comparing password","service":"acquisitions-api"}
+{"level":"info","message":"User admin@gm.com authenticated successfully","service":"acquisitions-api"}
+{"level":"info","message":"User signed in successfully : ","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [13/Oct/2025:16:20:47 +0000] \"GET /api/auth/sign-out HTTP/1.1\" 404 156 \"-\" \"PostmanRuntime/7.48.0\"","service":"acquisitions-api"}
+{"level":"info","message":"User signed out successfully","service":"acquisitions-api"}

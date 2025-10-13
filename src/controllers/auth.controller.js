@@ -62,7 +62,7 @@ export const signin = async (req, res, _next) => {
     const { email, password } = validationResult.data;
 
     // authenticate user
-    const user = await authenticateUser({ email, password });
+    const user = await authenticateUser({ email, inputPassword: password });
 
     const token = jwttoken.sign({
       id: user.id,
