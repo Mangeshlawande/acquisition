@@ -31,13 +31,15 @@
   },
   "scripts": {
     "dev": "node --watch src/index.js",
+    "start": "node src/index.js",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
-    "db:studio": "drizzle-kit studio"
+    "db:studio": "drizzle-kit studio",
+    "dev:docker": "sh ./scripts/docker-dev.sh"
   },
   "dependencies": {
     "@arcjet/inspect": "^1.0.0-beta.13",

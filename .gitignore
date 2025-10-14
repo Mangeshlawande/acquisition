@@ -1,2 +1,18 @@
 node_modules/
+.env
 .env.*
+!.env.development
+!.env.production
+
+# Local environment overrides
+.env.*.local
+.env.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Docker
+docker-compose.override.yml
+.neon_local/
