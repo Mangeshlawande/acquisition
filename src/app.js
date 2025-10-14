@@ -5,13 +5,14 @@ import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import morgan from 'morgan';
 import authRouter from '#routes/auth.routes.js';
+import userRouter from '#routes/user.routes.js';
 import securityMiddleware from '#middleware/security.middleware.js';
 
 const app = express();
 
 app.use(helmet());
 app.use(cors());
-app.use(securityMiddleware)
+app.use(securityMiddleware);
 app.use(express.json()); //  allow to pass json object through its request
 app.use(cookieParser());
 
@@ -26,6 +27,7 @@ app.get('/health', (req, res) => {
 });
 
 app.use('/api/auth', authRouter);
+app.use('/api/users', userRouter);
 
 app.use(
   morgan('combined', {
