@@ -27,3 +27,12 @@
 {"level":"info","message":"::1 - - [13/Oct/2025:17:25:43 +0000] \"GET /api/ HTTP/1.1\" 200 43 \"-\" \"PostmanRuntime/7.48.0\"","service":"acquisitions-api"}
 {"ip":"::1","level":"warn","message":"Rate Limit Exceeded ","path":"/api/","service":"acquisitions-api","userAgent":"PostmanRuntime/7.48.0"}
 {"ip":"::1","level":"warn","message":"Rate Limit Exceeded ","path":"/api/","service":"acquisitions-api","userAgent":"PostmanRuntime/7.48.0"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Oct/2025:17:27:49 +0000] \"GET /api HTTP/1.1\" 404 27 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Oct/2025:17:27:50 +0000] \"GET /nonexsistent HTTP/1.1\" 404 27 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Oct/2025:17:32:36 +0000] \"GET /api HTTP/1.1\" 404 27 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Oct/2025:17:32:37 +0000] \"GET /nonexsistent HTTP/1.1\" 404 27 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Oct/2025:17:34:42 +0000] \"GET /api HTTP/1.1\" 404 27 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Oct/2025:17:34:42 +0000] \"GET /nonexsistent HTTP/1.1\" 404 27 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Oct/2025:17:41:33 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Oct/2025:17:41:34 +0000] \"GET /api HTTP/1.1\" 200 42 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [14/Oct/2025:17:41:35 +0000] \"GET /nonexsistent HTTP/1.1\" 404 27 \"-\" \"-\"","service":"acquisitions-api"}
