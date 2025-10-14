@@ -6,4 +6,3 @@ export const formatValidationError = errors => {
 
   return JSON.stringify(errors);
 };
-

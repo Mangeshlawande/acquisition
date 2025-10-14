@@ -64,7 +64,7 @@ Create `.env.dev.local` with:
 ```bash
 # Neon Local Configuration
 NEON_API_KEY=your_neon_api_key
-NEON_PROJECT_ID=your_neon_project_id  
+NEON_PROJECT_ID=your_neon_project_id
 PARENT_BRANCH_ID=your_parent_branch_id
 
 # Application Configuration
@@ -133,7 +133,7 @@ The Dockerfile uses multi-stage builds for optimization:
 # Build development image
 docker build --target development -t acquisitions:dev .
 
-# Build production image  
+# Build production image
 docker build --target production -t acquisitions:prod .
 
 # Build specific stage
@@ -216,6 +216,7 @@ The production container includes health checks:
 #### Development Environment
 
 **Issue**: Neon Local fails to connect
+
 ```bash
 # Check Neon Local container logs
 docker-compose -f docker-compose.dev.yml logs neon-local
@@ -225,6 +226,7 @@ docker-compose -f docker-compose.dev.yml config
 ```
 
 **Issue**: Application fails to start
+
 ```bash
 # Check application logs
 docker-compose -f docker-compose.dev.yml logs app
@@ -236,6 +238,7 @@ docker-compose -f docker-compose.dev.yml exec app node -e "console.log(process.e
 #### Production Environment
 
 **Issue**: Database connection fails
+
 ```bash
 # Test database connectivity
 docker-compose -f docker-compose.prod.yml exec app node -e "
@@ -246,6 +249,7 @@ sql\`SELECT 1\`.then(() => console.log('DB OK')).catch(console.error);
 ```
 
 **Issue**: Container health check fails
+
 ```bash
 # Check health status
 docker inspect acquisitions-prod --format='{{json .State.Health}}'

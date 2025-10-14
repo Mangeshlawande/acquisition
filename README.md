@@ -62,6 +62,7 @@ will get back a strongly typed , validated result .
 bcrypt ::: -->
 
 ### Arcjet :::
+
 npm i @arcjet/arcjet
-"Arcjet is a lightweight and flexible Node.js framework for building web applications and APIs. It provides a simple and intuitive way to create server-side applications with minimal boilerplate code."   
+"Arcjet is a lightweight and flexible Node.js framework for building web applications and APIs. It provides a simple and intuitive way to create server-side applications with minimal boilerplate code."  
 Bot detection, Rate limiting , Email validation, Attack protection , Data redaction , Caching , Logging , Monitoring , Performance optimization;

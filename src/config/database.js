@@ -8,7 +8,6 @@ if (process.env.NODE_ENV === 'development') {
   neonConfig.poolQueryViaFetch = true;
 }
 
-
 const sql = neon(process.env.DATABASE_URL);
 
 const db = drizzle(sql);

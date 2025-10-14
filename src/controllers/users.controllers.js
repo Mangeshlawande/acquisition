@@ -5,20 +5,23 @@ import {
   updateUserSchema,
 } from '#validations/users.validation.js';
 import { formatValidationError } from '#utils/format.js';
-import { deleteUser, getAllUsers, getUserById, updateUser } from '#src/services/user.service.js';
+import {
+  deleteUser,
+  getAllUsers,
+  getUserById,
+  updateUser,
+} from '#src/services/user.service.js';
 
-
-
-export const fetchAllUsers = async (req , res , _next)=>{
+export const fetchAllUsers = async (req, res, _next) => {
   try {
     logger.info('Getting Users... ');
 
     const allUsers = await getAllUsers();
 
     res.json({
-      message:'successfully Retrieved users !!',
-      users:allUsers,
-      count:allUsers.length,
+      message: 'successfully Retrieved users !!',
+      users: allUsers,
+      count: allUsers.length,
     });
   } catch (error) {
     logger.error(error);
@@ -137,7 +140,7 @@ export const updateUserById = async (req, res, _next) => {
   }
 };
 
-export const deleteUserById = async (req, res,_next) => {
+export const deleteUserById = async (req, res, _next) => {
   try {
     logger.info(`Deleting user: ${req.params.id}`);
 

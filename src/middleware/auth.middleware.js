@@ -54,7 +54,7 @@ export const requireRole = allowedRoles => {
         });
       }
 
-    _next();
+      _next();
     } catch (e) {
       logger.error('Role verification error:', e);
       return res.status(500).json({

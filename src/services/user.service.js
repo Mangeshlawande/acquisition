@@ -3,18 +3,18 @@ import logger from '#config/logger.js';
 import users from '#models/users.model.js';
 import { eq } from 'drizzle-orm';
 
-
-
-export const getAllUsers = async ( ) => {
+export const getAllUsers = async () => {
   try {
-    const allUsers = await db.select({
-      id: users.id,
-      email: users.email,
-      name: users.name,
-      role: users.role,
-      create_at: users.created_at,
-      updated_at: users.updated_at,
-    }).from(users);
+    const allUsers = await db
+      .select({
+        id: users.id,
+        email: users.email,
+        name: users.name,
+        role: users.role,
+        create_at: users.created_at,
+        updated_at: users.updated_at,
+      })
+      .from(users);
 
     return allUsers;
   } catch (error) {
