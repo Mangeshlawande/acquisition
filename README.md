@@ -1,4 +1,4 @@
-# acquisition
+# Acquisitions-application
 
 set install eslint & prettier
 
