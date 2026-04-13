@@ -181,4 +181,3 @@ Currently no tests are set up, but the project structure supports adding:
 - `src/config/database.js` - Database connection and Drizzle setup
 - `drizzle.config.js` - Drizzle ORM configuration
 - `eslint.config.js` - Code linting rules and patterns
-
