@@ -5,7 +5,6 @@ describe('API Endpoints', () => {
   describe('GET /health', () => {
     it('should return health status', async () => {
       const response = await request(app).get('/health').expect(200);
-
       expect(response.body).toHaveProperty('status', 'OK');
       expect(response.body).toHaveProperty('timestamp');
       expect(response.body).toHaveProperty('uptime');
@@ -19,7 +18,7 @@ describe('API Endpoints', () => {
       expect(response.body).toHaveProperty(
         'message',
         'Acquisitions API is running!'
-      );
+      );S
     });
   });
 
