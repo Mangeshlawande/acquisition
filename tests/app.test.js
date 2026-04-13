@@ -18,7 +18,7 @@ describe('API Endpoints', () => {
       expect(response.body).toHaveProperty(
         'message',
         'Acquisitions API is running!'
-      );S
+      );
     });
   });
 

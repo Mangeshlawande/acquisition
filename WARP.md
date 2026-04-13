@@ -182,5 +182,3 @@ Currently no tests are set up, but the project structure supports adding:
 - `drizzle.config.js` - Drizzle ORM configuration
 - `eslint.config.js` - Code linting rules and patterns
 
-<!-- Agent pid 154719 -->
-<!-- Identity added: /home/mangesh/.ssh/id_ed25519 (mangeshlawande223@gmail.com) -->
